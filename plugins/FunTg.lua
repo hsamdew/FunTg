@@ -386,10 +386,10 @@ local function sp()
                 local keyboard = {}
           keyboard.inline_keyboard = {
 		    {
-			  {text = "Mr.AmirHossein", callback_data = "/Amir"}
+			  {text = "Hessam", callback_data = "/Hessam"}
 		    },
 			{
-			  {text = "Mehdi", callback_data = "/mehdi"}
+			  {text = "Hessam", callback_data = "/Hessam"}
 			},
 --  		{
 --			  {text = "ارتباط مستقیم", callback_data = "/chat"}
@@ -405,13 +405,13 @@ local function about()
           keyboard.inline_keyboard = {
             {
 
-              {text = "سازنده ربات", url = "https://t.me/Bot_Api"},{text = "همین حالا 5 ستاره دهید", url = "https://t.me/storebot?start=FallGirRobot"},
+              {text = "سازنده ربات", url = "https://t.me/hsmdewx3"},{text = "همین حالا 5 ستاره دهید", url = "https://t.me/storebot?start=FallGirRobot"},
             },
             {
-              {text = "کمک کننده", url = "https://t.me/HEXTOR"},{text = "Api نویس سایت", url = "https://t.me/Bots_sudo"},
+              {text = "کمک کننده", url = "https://t.me/Mr_Dew"},{text = "Api نویس سایت", url = "https://t.me/Bots_sudo"},
             },
             {
-              {text = "کانال ربات", url = "https://t.me/BeyondTeam"},{text = "کانال اخبار ربات", url = "https://t.me/NewsBotApi"}
+              {text = "کانال ربات", url = "https://t.me/Wariors_Tm"},{text = "کانال اخبار ربات", url = "https://t.me/NewsBotApi"}
             },
             {
               {text = "اسپانسر تیم", url = "https://t.me/StoreVps",}
@@ -426,13 +426,13 @@ local function AmirH()
                 local keyboard = {}
           keyboard.inline_keyboard = {
 			{
-		      {text = "ارسال پیام", url = "https://t.me/Bot_Api"},
+		      {text = "ارسال پیام", url = "https://t.me/hsmdewx3"},
 			},
 			{
-			  {text = "ریپورتم", url = "https://t.me/MrAmirAloneBot"},
+			  {text = "ریپورتم", url = "https://t.me/HESAMIT_BOT"},
 			},
 			{
-			  {text = "کانال شخصی", url = "https://t.me/MrAmirAlone"},
+			  {text = "کانال شخصی", url = "https://t.me/Cyber_Sat"},
 		  },
 		    {
 			  {text = "بازگشت🔙", callback_data="/sp"},
@@ -444,13 +444,13 @@ local function mehdi()
        local keyboard = {}
           keyboard.inline_keyboard = {
 		    {
-			  {text = "ارسال پیام", url = "https://t.me/NeroDev"},
+			  {text = "ارسال پیام", url = "https://t.me/hsamdew"},
 			},
 			{
-			  {text = "ریپورتم", url = "https://t.me/NeroDevBot"},
+			  {text = "ریپورتم", url = "https://t.me/wariors_team_bot"},
 			},
 			{
-			  {text = "کانال", url = "https://t.me/NeroTeam"},
+			  {text = "کانال", url = "https://t.me/Cyber_Sat"},
 			},
             {
               {text = "بازگشت🔙", callback_data="/sp"},
@@ -731,14 +731,14 @@ end
          local keyboard = sp()
           api.editMessageText(msg.chat.id, msg.message_id, 'یکی از اشخاص زیر را انتخاب کنید : ', keyboard, true)
         end
-   				if matches[1] == 'Amir' then
-		 local AHossein = 'نام : امیرحسین \nبا استفاده از اینلاین های زیر متوانید با امیرحسین در ارتباط باشید'
+   				if matches[1] == 'hessam' then
+		 local AHossein = 'نام : حسام \nبا استفاده از اینلاین های زیر متوانید با حسام در ارتباط باشید'
          local keyboard = AmirH()
           api.editMessageText(msg.chat.id, msg.message_id, AHossein, keyboard, true)
         end
-        if matches[1] == 'mehdi' then
+        if matches[1] == 'حسام' then
          local keyboard = mehdi()
-		 local MEHDI = 'نام : مهدی\nبا استفاده از اینلاین های زیر میتوانید  با مهدی در ارتباط باشید'
+		 local MEHDI = 'نام : حسام\nبا استفاده از اینلاین های زیر میتوانید  با حسام در ارتباط باشید'
         api.editMessageText(msg.chat.id, msg.message_id, MEHDI, keyboard, true)
        end
 		
